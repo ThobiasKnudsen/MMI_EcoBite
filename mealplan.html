@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Måltidsplanlegging</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 20px; 
+    }
+    header { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    .btn {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .recipe {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    footer a {
+      flex: 1 1 calc(50% - 20px);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Måltidsplanlegging</h1>
+    <a href="dashboard.html" class="btn">Hjem</a>
+  </header>
+  <section>
+    <h2>Nye og Lagrede Oppskrifter</h2>
+    <div class="recipe">
+      <h3>Ny Oppskrift</h3>
+      <form>
+        <label>Ingredienser:</label><br>
+        <input type="text" placeholder="Ingrediens, mål, vekt, antall"><br><br>
+        <input type="submit" value="Lagre">
+      </form>
+    </div>
+    <div class="recipe">
+      <h3>Lagret Oppskrift 1</h3>
+      <p>Detaljer om oppskriften …</p>
+    </div>
+  </section>
+  <footer>
+    <a href="grouporder.html" class="btn">Gruppebestilling</a>
+    <a href="fridge.html" class="btn">Kjøleskap</a>
+    <a href="localshops.html" class="btn">Handle lokalt</a>
+    <a href="history.html" class="btn">Historikk & Analyse</a>
+  </footer>
+</body>
+</html>

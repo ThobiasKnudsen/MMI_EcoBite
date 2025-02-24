@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil & Innstillinger</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; }
+    .profile { text-align: center; }
+    .profile img { width: 80px; height: 80px; border-radius: 50%; }
+    .btn {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 5px;
+    }
+    .setting {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Profil & Innstillinger</h1>
+    <a href="dashboard.html" class="btn">Hjem</a>
+  </header>
+  <section class="profile">
+    <img src="https://via.placeholder.com/80" alt="Profilbilde">
+    <h2>Brukernavn</h2>
+    <p>epost@example.com</p>
+  </section>
+  <section>
+    <h3>Innstillinger</h3>
+    <div class="setting">
+      <p>Personvern</p>
+    </div>
+    <div class="setting">
+      <p>Varsler</p>
+    </div>
+    <div class="setting">
+      <p>Gruppeadministrasjon</p>
+    </div>
+  </section>
+  <footer>
+    <a href="history.html" class="btn">Historikk & Analyse</a>
+    <a href="notifications.html" class="btn">Notifikasjoner</a>
+  </footer>
+</body>
+</html>

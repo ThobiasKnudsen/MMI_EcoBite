@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kjøleskap & Ingrediensoversikt</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; }
+    .ingredient {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kjøleskap & Ingrediensoversikt</h1>
+    <a href="dashboard.html" class="btn">Hjem</a>
+  </header>
+  <section>
+    <div class="ingredient">
+      <span>Melk</span>
+      <span>Status: Lav beholdning</span>
+    </div>
+    <div class="ingredient">
+      <span>Egg</span>
+      <span>Status: Tilstrekkelig</span>
+    </div>
+    <button class="btn">Legg til ingrediens</button>
+  </section>
+  <footer>
+    <a href="mealplan.html" class="btn">Måltidsplanlegging</a>
+  </footer>
+</body>
+</html>
