@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sosial Deling & Community</title>
+  <title>Fellesskap & Gruppebestilling</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-    header { display: flex; justify-content: space-between; align-items: center; }
-    .post {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      padding-bottom: 70px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .btn {
       padding: 10px 15px;
@@ -20,6 +24,24 @@
       border-radius: 5px;
       margin: 5px;
     }
+    .post, .item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f8f8f8;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
   </style>
 </head>
 <body>
@@ -28,18 +50,35 @@
     <a href="home.html" class="btn">Hjem</a>
   </header>
   <section>
+    <h2>Handleliste</h2>
+    <div class="item">
+      <p>Ingrediens 1 – Mengde</p>
+    </div>
+    <div class="item">
+      <p>Ingrediens 2 – Mengde</p>
+    </div>
+    <button class="btn">Legg til ingrediens</button>
+  </section>
+  <section>
+    <h2>Felles måltid</h2>
     <div class="post">
       <h3>Oppskrift: Bærekraftig Salat</h3>
       <p>Del dine erfaringer og tips for bærekraftig matlaging.</p>
-      <a href="#" class="btn">Lik</a>
-      <a href="#" class="btn">Kommentar</a>
+      <a href="#" class="btn">Kommenter</a>
+      <a href="#" class="btn">Stem ned</a>
+      <a href="#" class="btn">Stem opp</a>
     </div>
     <div class="post">
       <h3>Tips: Reduser matsvinn</h3>
       <p>Bruk rester kreativt og spar miljøet.</p>
-      <a href="#" class="btn">Lik</a>
-      <a href="#" class="btn">Kommentar</a>
+      <a href="#" class="btn">Kommenter</a>
+      <a href="#" class="btn">Stem ned</a>
+      <a href="#" class="btn">Stem opp</a>
     </div>
   </section>
+  <footer>
+    <a href="fridge.html" class="btn">Kjøleskap</a>
+    <a href="mealplan.html" class="btn">Planlegg måltid</a>
+  </footer>
 </body>
 </html>

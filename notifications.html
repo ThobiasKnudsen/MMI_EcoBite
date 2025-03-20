@@ -7,6 +7,10 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
     header { display: flex; justify-content: space-between; align-items: center; }
+    .btn-container {
+      display: flex;
+      gap: 10px;
+    }
     .notification {
       border-bottom: 1px solid #ccc;
       padding: 10px 0;
@@ -23,7 +27,10 @@
 <body>
   <header>
     <h1>Notifikasjoner</h1>
-    <a href="home.html" class="btn">Hjem</a>
+    <div class="btn-container">
+      <a href="settings.html" class="btn">Innstillinger</a>
+      <a href="home.html" class="btn">Hjem</a>
+    </div>
   </header>
   <section>
     <div class="notification">
